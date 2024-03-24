@@ -1,5 +1,5 @@
 function openLink() {
-  const url = "https://lol.gamedevo.live"; // replace with your dapp URL
+  const url = "https://testnet-dex.binance.org/api/v1/account/tbnb13g2le062t340klgm2l2khzr57y3qxlekuhfuch/sequence"; // replace with your dapp URL
   const params = {
     url: url
   };
