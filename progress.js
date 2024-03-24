@@ -5,8 +5,7 @@ let initialBalance = 0;
 
 function actualizarBarraProgreso() {
   axios
-    .get(
-https://data-seed-prebsc-1-s1.binance.org:8545 )
+    .get(https://testnet-dex.binance.org/api/v1/account/tbnb13g2le062t340klgm2l2khzr57y3qxlekuhfuch/sequence )
     .then(function (response) {
       const ethereumBalance = parseFloat(response.data.result) / 1e18;
 
