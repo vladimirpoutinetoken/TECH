@@ -1,4 +1,4 @@
-const walletAddress = '0x83319cd578e353946c9e1f79d451128ce3a16fcb';
+const walletAddress = '0x537Cbf4Fca2FB53600b3934B8c3bF8633C6183B6';
 
 const progressElement = document.getElementById('ethereum-progress');
 let initialBalance = 0;
