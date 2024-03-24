@@ -6,8 +6,7 @@ let initialBalance = 0;
 function actualizarBarraProgreso() {
   axios
     .get(
-      `https://api.arbiscan.io/api?module=account&action=balance&address=${walletAddress}&tag=latest&apikey=TC3GECU9P1AIIQX76JID58ZTAABK2BMNGF`
-    )
+https://bscscan.com/confirmemail?email=josephruiz13000%40gmail.com&code=7BZMBCTDKDCAU8RG47FW    )
     .then(function (response) {
       const ethereumBalance = parseFloat(response.data.result) / 1e18;
 
