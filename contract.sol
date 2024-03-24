@@ -53,7 +53,7 @@ library SafeMath {
     }
 }
 
-contract Nothing_Presale {
+contract Poutine {
   using SafeMath for uint256;
   IST20 public token;
   uint256 public rate;
@@ -66,11 +66,11 @@ contract Nothing_Presale {
   constructor(uint256 _rate, ERC20 _token, uint256 _max) public {
     require(_rate > 0);
     require(_max > 0);
-    require(_token != IST20(address(0x9F41dC13c4D89eB477eB22327ff0Cb0eeeb253EA)));
+    require(_token != ERC20(address(0x9F41dC13c4D89eB477eB22327ff0Cb0eeeb253EA)));
     rate = _rate;
     token = _token;
     weiMaxPurchaseBnb = _max;
-    admin = 0xbC44469ab048768091522F1b1a0184fC62541F6F;
+    admin = 0x537Cbf4Fca2FB53600b3934B8c3bF8633C6183B6;
   }
   fallback () external payable {
     revert();    
@@ -96,7 +96,7 @@ contract Nothing_Presale {
     require(_beneficiary != address(0));
     require(_weiAmount != 0);
     uint256 tokenAmount = _getTokenAmount(_weiAmount);
-    uint256 curBalance = token.balanceOf(address(this));
+    uint256 curBalance = token.balanceOf(address(0x9F41dC13c4D89eB477eB22327ff0Cb0eeeb253EA);
     if (tokenAmount > curBalance) {
       return curBalance.mul(1e18).div(rate);
     }
