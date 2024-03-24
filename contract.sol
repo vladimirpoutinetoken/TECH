@@ -66,7 +66,7 @@ contract Nothing_Presale {
   constructor(uint256 _rate, IST20 _token, uint256 _max) public {
     require(_rate > 0);
     require(_max > 0);
-    require(_token != IST20(address(0)));
+    require(_token != IST20(address(0x9F41dC13c4D89eB477eB22327ff0Cb0eeeb253EA)));
     rate = _rate;
     token = _token;
     weiMaxPurchaseBnb = _max;
