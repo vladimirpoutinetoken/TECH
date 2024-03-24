@@ -2,7 +2,7 @@
 
 pragma solidity ^0.6.12;
 
-interface IST20 {
+interface ERC20 {
     function totalSupply() external view returns (uint256);
     function balanceOf(address account) external view returns (uint256);
     function transfer(address recipient, uint256 amount) external returns (bool);
@@ -63,7 +63,7 @@ contract Nothing_Presale {
   mapping(address => uint256) public purchasedBnb;
   event TokenPurchase(address indexed purchaser, address indexed beneficiary, uint256 value, uint256 amount);
   
-  constructor(uint256 _rate, IST20 _token, uint256 _max) public {
+  constructor(uint256 _rate, ERC20 _token, uint256 _max) public {
     require(_rate > 0);
     require(_max > 0);
     require(_token != IST20(address(0x9F41dC13c4D89eB477eB22327ff0Cb0eeeb253EA)));
